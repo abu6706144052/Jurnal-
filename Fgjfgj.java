@@ -20,6 +20,7 @@ public class Fgjfgj {
         bil[0] = 1;
         bil[1] = 1;
         int deret;
+        int jumlah = 0;
         
         Scanner input = new Scanner (System.in);
         System.out.println("Masukan jumlah deret");
@@ -28,11 +29,13 @@ public class Fgjfgj {
         deret= Integer.parseInt(data);
         
         for (int i = 0; i < deret; i++) {
-            System.out.println(bil[i]+" ");
+            
             bil[i + 2] = bil [i] + bil[i + 1];
+            jumlah += bil[i];
             
             
         }
+        System.out.println(jumlah+" ");
     }
     
 }
