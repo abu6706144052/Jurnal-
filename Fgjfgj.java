@@ -29,12 +29,13 @@ public class Fgjfgj {
         deret= Integer.parseInt(data);
         
         for (int i = 0; i < deret; i++) {
-            System.out.println(jumlah+" ");
+            
             bil[i + 2] = bil [i] + bil[i + 1];
             jumlah += bil[i];
             
             
         }
+        System.out.println(jumlah+" ");
     }
     
 }
